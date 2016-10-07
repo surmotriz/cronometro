@@ -11,18 +11,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var AppComponent = (function () {
     function AppComponent() {
-        this.hora = 0;
-        this.minuto = 0;
-        this.segundo = 0;
+        this.titulo = 'Lista de Heroes';
+        this.heroe = { id: 1, nombre: 'El Capitan Fanegas' };
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n      <h1>My First Angular App</h1>\n      <h2>Cronometro</h2>\n      <button>Empezar</button>\n      <button>Lapso</button>\n      <button>Parar</button>      \n      <div>\n        <p>{{hora}} : {{minuto}} : {{segundo}} </p>\n      </div>\n    "
+            templateUrl: 'app/app.html'
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
     return AppComponent;
 }());
 exports.AppComponent = AppComponent;
+var Heroe = (function () {
+    function Heroe() {
+    }
+    return Heroe;
+}());
+exports.Heroe = Heroe;
 //# sourceMappingURL=app.component.js.map
